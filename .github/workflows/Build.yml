@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  Test:
+  Build:
     runs-on: macos-latest
 
     steps:
@@ -17,3 +17,4 @@ jobs:
       - name: Install Unity
         run: |
           brew install --cask unity
+          which unity
