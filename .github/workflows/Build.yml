@@ -17,4 +17,8 @@ jobs:
       - name: Install Unity
         run: |
           brew install --cask unity
-          which unity
+
+      - name: akiojin/unity-build-github-action@v3.0.11
+        with:
+          build-target: 'iOS'
+          project-directory: ${{ github.workspace }}
