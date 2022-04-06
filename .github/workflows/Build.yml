@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Test:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: akiojin/unity-get-version-github-action@v1
+
+      - name: Install Unity
+        run: |
+          brew install --cask unity
