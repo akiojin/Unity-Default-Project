@@ -8,11 +8,13 @@ on:
 jobs:
   Build:
     runs-on: macos-latest
-    container:
-      image: gableroux/unity3d:2021.3.7f1
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install Unity
+        run: |
+          brew install --cask unity
 
       - uses: akiojin/unity-get-version-github-action@v1.1.4
 
