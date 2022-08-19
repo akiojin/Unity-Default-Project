@@ -18,7 +18,7 @@ jobs:
 
       - uses: akiojin/unity-get-version-github-action@v1.1.4
 
-      - uses: akiojin/unity-build-github-action@v3.2.4
+      - uses: akiojin/unity-build-github-action@v3.3.7
         with:
           build-target: 'iOS'
           project-directory: ${{ github.workspace }}
