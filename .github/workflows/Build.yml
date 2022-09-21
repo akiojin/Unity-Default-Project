@@ -23,7 +23,7 @@ jobs:
 
       - uses: akiojin/unity-get-version-github-action@v1.1.4
 
-      - uses: akiojin/unity-build-github-action@v3.3.11
+      - uses: akiojin/unity-build-github-action@v3.3.17
         with:
           build-target: ${{ matrix.BUILD_TARGET }}
           project-directory: ${{ github.workspace }}
