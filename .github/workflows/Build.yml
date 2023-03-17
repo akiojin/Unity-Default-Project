@@ -21,7 +21,7 @@ jobs:
         run: |
           brew install --cask unity
 
-      - uses: akiojin/unity-get-version-github-action@v1.1.5
+      - uses: akiojin/unity-get-version-github-action@v1.1.6
 
       - uses: akiojin/unity-build-github-action@v3.5.8
         with:
